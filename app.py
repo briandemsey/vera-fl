@@ -29,16 +29,16 @@ FL_GOLD = "#FFD700"
 # ============================================================================
 
 def load_districts():
-    """Load Florida district data."""
+    """Load Florida district data (alphabetical order)."""
     districts_data = [
-        ("13", "Miami-Dade County", 334000, 83500, 25.0, 88.5, "B"),
         ("06", "Broward County", 256000, 38400, 15.0, 89.2, "B"),
-        ("29", "Hillsborough County", 219000, 39420, 18.0, 87.8, "B"),
-        ("48", "Orange County", 212000, 46640, 22.0, 86.4, "B"),
-        ("50", "Palm Beach County", 190000, 30400, 16.0, 91.2, "A"),
         ("16", "Duval County", 130000, 13000, 10.0, 85.6, "B"),
-        ("52", "Pinellas County", 96000, 7680, 8.0, 90.8, "A"),
+        ("29", "Hillsborough County", 219000, 39420, 18.0, 87.8, "B"),
+        ("13", "Miami-Dade County", 334000, 83500, 25.0, 88.5, "B"),
+        ("48", "Orange County", 212000, 46640, 22.0, 86.4, "B"),
         ("49", "Osceola County", 82000, 28700, 35.0, 84.2, "B"),
+        ("50", "Palm Beach County", 190000, 30400, 16.0, 91.2, "A"),
+        ("52", "Pinellas County", 96000, 7680, 8.0, 90.8, "A"),
     ]
 
     df = pd.DataFrame(districts_data, columns=[
@@ -53,14 +53,14 @@ def load_access_data():
     access_data = []
 
     districts = [
-        ("13", "Miami-Dade County"),
         ("06", "Broward County"),
-        ("29", "Hillsborough County"),
-        ("48", "Orange County"),
-        ("50", "Palm Beach County"),
         ("16", "Duval County"),
-        ("52", "Pinellas County"),
+        ("29", "Hillsborough County"),
+        ("13", "Miami-Dade County"),
+        ("48", "Orange County"),
         ("49", "Osceola County"),
+        ("50", "Palm Beach County"),
+        ("52", "Pinellas County"),
     ]
 
     for district_id, district_name in districts:
@@ -105,14 +105,14 @@ def load_fast_data():
     fast_data = []
 
     districts = [
-        ("13", "Miami-Dade County"),
         ("06", "Broward County"),
-        ("29", "Hillsborough County"),
-        ("48", "Orange County"),
-        ("50", "Palm Beach County"),
         ("16", "Duval County"),
-        ("52", "Pinellas County"),
+        ("29", "Hillsborough County"),
+        ("13", "Miami-Dade County"),
+        ("48", "Orange County"),
         ("49", "Osceola County"),
+        ("50", "Palm Beach County"),
+        ("52", "Pinellas County"),
     ]
 
     for district_id, district_name in districts:
