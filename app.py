@@ -16,9 +16,7 @@ from datetime import datetime
 # CONFIGURATION
 # ============================================================================
 
-APP_PASSWORD = "vera2026"
-
-# Florida colors
+APP_# Florida colors
 FL_BLUE = "#002D72"
 FL_ORANGE = "#F4811F"
 FL_RED = "#C41E3A"
@@ -756,9 +754,6 @@ def main():
     """, unsafe_allow_html=True)
 
     # Authentication
-    if not check_password():
-        return
-
     # Load data
     districts_df = load_districts()
     access_df = load_access_data()
